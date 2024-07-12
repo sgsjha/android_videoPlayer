@@ -12,7 +12,7 @@ import android.view.MenuItem
 import com.example.android_videoplayer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+// sdjf
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
