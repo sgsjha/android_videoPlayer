@@ -1,5 +1,10 @@
 package com.example.android_videoplayer
 
+import android.net.Uri
+import android.net.Uri.*
+import android.R.*
+import android.widget.MediaController
+import android.widget.VideoView
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +27,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // specify the location of video file
+       val uri: Uri = parse("android.resource://" + packageName + "/" + "demo video voiceover")
+
+//dsf
         setSupportActionBar(binding.toolbar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
